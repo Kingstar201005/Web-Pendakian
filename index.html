@@ -69,11 +69,19 @@
     </div>
   </div>
 
+   lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = "none";
+      lightboxImg.src = "";
+    }
+  });
+</script>
+  <!-- ====== SECTION: KONTAK ====== -->
    <div class="container">
   <a class="cta" 
    href="https://wa.me/6281288017989?text=Halo%20saya%20ingin%20bertanya" 
    target="_blank">
-  Hubungi Admin via WhatsApp
+  Hubungi via Admin WhatsApp
 </a>
   </div>
   <script>
@@ -191,5 +199,6 @@
   </script>
 </body>
 </html>
+
 
 
